@@ -137,8 +137,8 @@ const seoKeywords = [
           <div className="no-select">
             <h3 className="font-bold text-lg mb-4">Sky Fly Group</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:opacity-80 transition">Sky Fly Logistics Pvt Ltd</a></li>
-              <li><a href="#" className="hover:opacity-80 transition">Sky Fly International</a></li>
+              <li><a href="https://www.skyflyexpress.com" className="hover:opacity-80 transition">Sky Fly Logistics Pvt Ltd</a></li>
+              <li><a href="https://www.skyflyexpress.com" className="hover:opacity-80 transition">Sky Fly International</a></li>
               <li><a href="#" className="hover:opacity-80 transition">Airnet International</a></li>
             </ul>
           </div>
@@ -154,7 +154,7 @@ const seoKeywords = [
             </div>
 
             <a
-              href="#"
+              href="https://share.google/SLVnF9CRCDe3oAwHb"
               className="inline-block bg-white text-primary px-4 py-2 rounded-lg font-semibold text-sm hover:bg-accent hover:text-white transition"
             >
               Google Business Profile
