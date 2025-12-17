@@ -21,7 +21,7 @@ export default function AirnetHeader() {
                 <span>WhatsApp: +91 9322867487</span>
               </a>
               <a href="tel:989233085" className="flex items-center gap-1 hover:opacity-80 transition font-semibold flex-nowrap">
-                <span>Support: +91 989233085</span>
+                <span>Support: +91 9892330085</span>
               </a>
               <a href="mailto:ns@skyflyexpress.com" className="flex items-center gap-1 hover:opacity-80 transition font-semibold hidden md:flex flex-nowrap">
                 <Mail size={16} />

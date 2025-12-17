@@ -112,7 +112,7 @@ const seoKeywords = [
               </a>
 
               <a href="tel:+919892330855" className="flex items-center gap-2 hover:opacity-80 transition selectable">
-                <Phone size={16} /> Support: +91 9892330855
+                <Phone size={16} /> Support: +91 9892330085
               </a>
 
               <a href="mailto:ns@skyflyexpress.com" className="flex items-center gap-2 hover:opacity-80 transition selectable">

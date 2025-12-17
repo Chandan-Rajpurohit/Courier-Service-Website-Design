@@ -42,7 +42,7 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-1">
               <MapPin className="h-4 w-4" />
-              <span>Corporate Headquarters, New Delhi</span>
+              <span>Corporate Headquarters, Mumbai</span>
             </div>
           </div>
           <div className="flex items-center space-x-3">
