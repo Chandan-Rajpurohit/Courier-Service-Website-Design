@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /services
+Allow: /blogs
+Allow: /about
+
+# Priority Pages for Indexing
+Sitemap: https://www.airnetinternational.com/sitemap.xml
+
+# Keywords & Priority Directives for Crawlers
+# Priority: DG Courier Service, Hazardous Cargo Shipping, Chemical Courier
+# Priority: Dangerous Goods Transport, Pharmaceutical Logistics, Hazardous Material Shipping
+# Priority: Chemical Export Services, DG Shipping Specialist, International Hazardous Courier
+# Priority: Airnet International Expertise, Sky Fly Group Solutions

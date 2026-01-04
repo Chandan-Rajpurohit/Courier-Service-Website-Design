@@ -2,8 +2,21 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Package, Globe, Truck, CheckCircle2, ArrowRight, FileText, BarChart3, Award, Zap, Shield, Users, TrendingUp, Flame } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import {
+  Package,
+  Globe,
+  Truck,
+  ArrowRight,
+  FileText,
+  BarChart3,
+  Award,
+  Zap,
+  Shield,
+  Users,
+  TrendingUp,
+  Flame,
+} from "lucide-react"
+import { useState, useEffect } from "react"
 
 export default function AirnetHome() {
   const handleGetQuote = () => {
@@ -24,16 +37,21 @@ export default function AirnetHome() {
   const heroSlides = [
     {
       title: "Global Courier & Logistics Excellence",
-      subtitle: "One-Stop Complete Logistics Solution for International Export & Import Services | Trusted by Corporates & Companies Worldwide"
+      subtitle:
+        "One-Stop Complete Logistics Solution for International Export & Import Services | Trusted by Corporates & Companies Worldwide",
+      image: "/hero-global-courier-services.jpg",
     },
     {
       title: "30 Years of Trusted International Logistics",
-      subtitle: "Serving 150+ countries with specialized handling of chemical, pharmaceutical, and hazardous shipments"
+      subtitle: "Serving 150+ countries with specialized handling of chemical, pharmaceutical, and hazardous shipments",
+      image: "/hero-chemical-pharmaceutical-shipping.jpg",
     },
     {
       title: "Your Complete Export & Import Solution",
-      subtitle: "Fast, reliable, and secure logistics services backed by expert customs clearance and real-time tracking"
-    }
+      subtitle:
+        "Fast, reliable, and secure logistics services backed by expert customs clearance and real-time tracking",
+      image: "/hero-freight-container-shipping.jpg",
+    },
   ]
 
   useEffect(() => {
@@ -45,8 +63,20 @@ export default function AirnetHome() {
 
   return (
     <main className="w-full no-select">
-      <section className="relative gradient-primary text-white py-24 px-4 overflow-hidden h-[500px] md:h-[600px] flex items-center">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative text-white py-24 px-4 overflow-hidden h-[500px] md:h-[600px] flex items-center">
+        {/* Background image slider */}
+        {heroSlides.map((slide, idx) => (
+          <div
+            key={idx}
+            className={`absolute inset-0 transition-opacity duration-1000 ${idx === currentSlide ? "opacity-100" : "opacity-0"}`}
+          >
+            <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-secondary/80 to-accent/90"></div>
+          </div>
+        ))}
+
+        {/* Decorative elements */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
         </div>
@@ -82,7 +112,7 @@ export default function AirnetHome() {
               <button
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
-                className={`h-2 rounded-full transition-all ${idx === currentSlide ? 'bg-white w-8' : 'bg-white/50 w-2'}`}
+                className={`h-2 rounded-full transition-all ${idx === currentSlide ? "bg-white w-8" : "bg-white/50 w-2"}`}
                 aria-label={`Slide ${idx + 1}`}
               />
             ))}
@@ -109,17 +139,26 @@ export default function AirnetHome() {
       <section className="py-16 px-4 bg-gradient-to-br from-white to-gray-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold gradient-text mb-4 text-center">Partnered With Industry Leaders</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Trusted collaborations with world-renowned courier and logistics providers</p>
-          
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Trusted collaborations with world-renowned courier and logistics providers
+          </p>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {[
               { name: "DHL", logo: "/images/dhl-logo.webp", desc: "Trusted Express Cargo & Logistics" },
               { name: "UPS", logo: "/images/ups-logo.jpg", desc: "Global Shipping Solutions" },
               { name: "Aramex", logo: "/images/aramex-logo.png", desc: "International Express Services" },
             ].map((partner, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-lg border-2 border-primary/20 hover:border-accent hover:shadow-xl transition-all text-center card-shadow group">
+              <div
+                key={idx}
+                className="bg-white p-8 rounded-lg border-2 border-primary/20 hover:border-accent hover:shadow-xl transition-all text-center card-shadow group"
+              >
                 <div className="h-20 mb-4 flex items-center justify-center">
-                  <img src={partner.logo || "/placeholder.svg"} alt={partner.name} className="max-h-20 max-w-32 object-contain group-hover:scale-110 transition" />
+                  <img
+                    src={partner.logo || "/placeholder.svg"}
+                    alt={partner.name}
+                    className="max-h-20 max-w-32 object-contain group-hover:scale-110 transition"
+                  />
                 </div>
                 <h3 className="font-bold text-lg gradient-text mb-2">{partner.name}</h3>
                 <p className="text-sm text-gray-600">{partner.desc}</p>
@@ -182,7 +221,9 @@ export default function AirnetHome() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">Industries We Specialize In</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Serving diverse sectors with expert logistics and export solutions</p>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Serving diverse sectors with expert logistics and export solutions
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -216,28 +257,44 @@ export default function AirnetHome() {
         <div className="container mx-auto text-center max-w-5xl">
           <h2 className="text-4xl font-bold gradient-text mb-6">Part of Sky Fly Group</h2>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto text-lg no-select">
-            Airnet International is a proud division of Sky Fly Group, bringing together expertise, reliability, and excellence in logistics and courier services since 1995.
+            Airnet International is a proud division of Sky Fly Group, bringing together expertise, reliability, and
+            excellence in logistics and courier services since 1995.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
-              { name: "Sky Fly Logistics Pvt Ltd", desc: "Parent Company & Industry Leader", logo: "/images/sfl-globe-logo.png" },
-              { name: "Sky Fly International", desc: "Global Courier & Logistics Services", logo: "/images/sfl-globe-logo.png" },
-              { name: "Airnet International", desc: "Global Courier & Export Services", logo: "/images/airnet-symbol.png" },
+              {
+                name: "Sky Fly Logistics Pvt Ltd",
+                desc: "Parent Company & Industry Leader",
+                logo: "/images/sfl-globe-logo.png",
+              },
+              {
+                name: "Sky Fly International",
+                desc: "Global Courier & Logistics Services",
+                logo: "/images/sfl-globe-logo.png",
+              },
+              {
+                name: "Airnet International",
+                desc: "Global Courier & Export Services",
+                logo: "/images/airnet-symbol.png",
+              },
             ].map((company, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-lg border-2 border-primary/20 card-shadow hover:shadow-lg transition no-select">
-                <img src={company.logo || "/placeholder.svg"} alt={company.name} className="h-24 w-24 object-contain mx-auto mb-4" />
+              <div
+                key={idx}
+                className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-lg border-2 border-primary/20 card-shadow hover:shadow-lg transition no-select"
+              >
+                <img
+                  src={company.logo || "/placeholder.svg"}
+                  alt={company.name}
+                  className="h-24 w-24 object-contain mx-auto mb-4"
+                />
                 <h3 className="text-xl font-bold gradient-text mb-2">{company.name}</h3>
                 <p className="text-gray-600">{company.desc}</p>
               </div>
             ))}
           </div>
 
-          <Button
-            onClick={handleGetQuote}
-            size="lg"
-            className="btn-primary px-8 py-6 rounded-lg text-lg font-bold"
-          >
+          <Button onClick={handleGetQuote} size="lg" className="btn-primary px-8 py-6 rounded-lg text-lg font-bold">
             Visit Main Website <ArrowRight className="ml-2" size={20} />
           </Button>
         </div>
@@ -251,18 +308,15 @@ export default function AirnetHome() {
                 30 Years of Excellence in International Logistics
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Founded in 1995, Airnet International has grown into a trusted division of Sky Fly Group,
-                pioneering comprehensive import-export logistics solutions across the globe. With three decades of
-                expertise, we've established ourselves as industry leaders in handling specialized shipments.
+                Founded in 1995, Airnet International has grown into a trusted division of Sky Fly Group, pioneering
+                comprehensive import-export logistics solutions across the globe. With three decades of expertise, we've
+                established ourselves as industry leaders in handling specialized shipments.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 From chemical shipments and hazardous materials to pharmaceutical products, petroleum, petro-chemicals,
                 and specialized cargo, our team delivers excellence with precision, compliance, and reliability.
               </p>
-              <Button
-                onClick={handleGetQuote}
-                className="btn-primary px-8 py-3 rounded-lg text-lg font-bold"
-              >
+              <Button onClick={handleGetQuote} className="btn-primary px-8 py-3 rounded-lg text-lg font-bold">
                 Learn More About Us
               </Button>
             </div>
@@ -289,7 +343,9 @@ export default function AirnetHome() {
 
       <section className="py-20 px-4 gradient-primary text-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center no-select">Comprehensive Logistics Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center no-select">
+            Comprehensive Logistics Services
+          </h2>
           <p className="text-white/90 text-center mb-12 max-w-3xl mx-auto text-lg no-select">
             Complete solution for all your international export and import requirements
           </p>
@@ -329,7 +385,10 @@ export default function AirnetHome() {
             ].map((service, idx) => {
               const Icon = service.icon
               return (
-                <Card key={idx} className="bg-white/10 backdrop-blur text-white p-6 border border-white/20 card-shadow no-select">
+                <Card
+                  key={idx}
+                  className="bg-white/10 backdrop-blur text-white p-6 border border-white/20 card-shadow no-select"
+                >
                   <Icon className="text-accent mb-4" size={32} />
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                   <p className="text-white/80">{service.desc}</p>
@@ -382,7 +441,9 @@ export default function AirnetHome() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl font-bold gradient-text mb-12 text-center no-select">Why Choose Airnet International?</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-12 text-center no-select">
+            Why Choose Airnet International?
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -419,10 +480,7 @@ export default function AirnetHome() {
                 desc: "One-stop solution for all export and import requirements",
               },
             ].map((item, idx) => (
-              <Card
-                key={idx}
-                className="p-6 border-l-4 border-accent hover:shadow-lg card-shadow bg-white no-select"
-              >
+              <Card key={idx} className="p-6 border-l-4 border-accent hover:shadow-lg card-shadow bg-white no-select">
                 <div className="flex gap-4">
                   <Shield className="text-secondary flex-shrink-0 mt-1" size={24} />
                   <div>
