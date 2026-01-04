@@ -219,7 +219,7 @@ export default function ClientBlogsPage() {
                 Latest developments shaping the logistics and courier industry
               </p>
               <a
-                href="https://www.skyflyexpress.com/blog/category/industry-trends"
+                href="https://www.skyflyexpress.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
@@ -235,7 +235,7 @@ export default function ClientBlogsPage() {
               <h3 className="text-xl font-bold mb-2">Global Trade</h3>
               <p className="text-gray-600 text-sm mb-4">Insights on international commerce and cross-border shipping</p>
               <a
-                href="https://www.skyflyexpress.com/blog/category/global-trade"
+                href="https://www.skyflyexpress.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
@@ -251,7 +251,7 @@ export default function ClientBlogsPage() {
               <h3 className="text-xl font-bold mb-2">Shipping Guides</h3>
               <p className="text-gray-600 text-sm mb-4">Practical tips and how-to guides for efficient shipping</p>
               <a
-                href="https://www.skyflyexpress.com/blog/category/shipping-guides"
+                href="https://www.skyflyexpress.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
