@@ -224,6 +224,71 @@ export default function ChemicalCourierPage() {
         </div>
       </section>
 
+      {/* Chemical Types Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">
+            Chemical Types We Transport
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "Industrial Solvents", desc: "Acetone, alcohols, toluene, and industrial cleaning solvents" },
+              { title: "Acids & Bases", desc: "Sulfuric, nitric, hydrochloric acids and caustic solutions" },
+              { title: "Flammable Liquids", desc: "Paints, thinners, petroleum products, and organic solvents" },
+              { title: "Corrosive Materials", desc: "Battery acid, alkaline solutions, and reactive chemicals" },
+              { title: "Oxidizing Agents", desc: "Peroxides, permanganates, and bleaching compounds" },
+              { title: "Specialty Chemicals", desc: "Lab reagents, pharmaceutical intermediates, and custom formulations" },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg mb-3 text-secondary">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">
+            Chemical Shipping FAQ
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3">What makes chemical shipping different?</h3>
+              <p className="text-gray-600">
+                Chemical shipping requires specialized knowledge of hazard classification, proper packaging, segregation rules, and regulatory compliance. Improper handling can cause environmental damage and safety hazards. Professional chemical couriers have extensive training and certifications.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3">Do all chemicals require temperature control?</h3>
+              <p className="text-gray-600">
+                Not all, but many sensitive chemicals benefit from temperature-controlled transport. We assess each shipment and recommend appropriate conditions to maintain chemical stability and efficacy.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3">What documentation is needed for chemical export?</h3>
+              <p className="text-gray-600">
+                Chemical exports require: Safety Data Sheet (SDS), Commercial Invoice, Bill of Lading/Air Waybill, Packing List, Certificate of Origin, and any required export licenses. We handle all documentation to ensure smooth customs clearance.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3">How do you ensure chemical compatibility during shipment?</h3>
+              <p className="text-gray-600">
+                We use segregation charts and chemical compatibility databases to ensure incompatible chemicals are never shipped together. This prevents dangerous reactions and ensures safe transport for both cargo and personnel.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3">Is chemical shipping insured?</h3>
+              <p className="text-gray-600">
+                Yes! All our chemical shipments are fully insured with specialized hazmat coverage. We recommend insurance values matching your cargo's full replacement and liability costs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Services */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">

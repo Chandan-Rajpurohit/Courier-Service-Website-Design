@@ -263,20 +263,67 @@ export default function CommercialCourierPage() {
         </div>
       </section>
 
-      {/* Related Services */}
+      {/* FAQ Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">
+            Commercial Courier FAQ
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">What delivery times do you offer?</h3>
+              <p className="text-gray-600">
+                We offer same-day local delivery, next-day domestic delivery, and express international shipping (3-7 days depending on destination). Exact timelines depend on location and service level selected.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Do you provide tracking for all shipments?</h3>
+              <p className="text-gray-600">
+                Yes! All shipments include real-time tracking so you and your customers know exactly where packages are at all times. Access tracking information 24/7 via our online portal or mobile app.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">What is the maximum weight/size for parcels?</h3>
+              <p className="text-gray-600">
+                We handle parcels up to 100kg and bulk shipments of unlimited weight. Oversized items require special handling which we're equipped to provide. Contact us for custom requirements.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Are your prices competitive for business volume?</h3>
+              <p className="text-gray-600">
+                Absolutely! We offer tiered discounts for high-volume shippers, consolidated shipping options, and customized rates for recurring business needs. Request a business quote for pricing.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Do you offer insurance for valuable items?</h3>
+              <p className="text-gray-600">
+                Yes. All shipments include basic coverage, and we offer optional comprehensive insurance for high-value items at competitive rates. Declare value during booking.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Can you handle fragile or special items?</h3>
+              <p className="text-gray-600">
+                Yes! We specialize in fragile item packaging, temperature-controlled delivery, and special handling for art, electronics, and other sensitive cargo. Notify us of special requirements during booking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">Related Services</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/services/dg-hazardous" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+            <Link href="/services/dg-hazardous" className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="font-bold text-lg mb-2 text-primary">DG & Hazardous Cargo</h3>
               <p className="text-sm text-gray-600">Specialized dangerous goods transport</p>
             </Link>
-            <Link href="/services/chemical-courier" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+            <Link href="/services/chemical-courier" className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="font-bold text-lg mb-2 text-secondary">Chemical Courier</h3>
               <p className="text-sm text-gray-600">Expert chemical shipment handling</p>
             </Link>
-            <Link href="/services" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+            <Link href="/services" className="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="font-bold text-lg mb-2 text-accent">All Services</h3>
               <p className="text-sm text-gray-600">View complete service offerings</p>
             </Link>

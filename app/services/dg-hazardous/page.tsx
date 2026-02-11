@@ -312,27 +312,103 @@ export default function DGHazardousPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">
+            Frequently Asked Questions About DG Shipping
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">What are the 9 classes of dangerous goods?</h3>
+              <p className="text-gray-600">
+                The UN system classifies dangerous goods into 9 classes: Class 1 (Explosives), Class 2 (Gases), Class 3 (Flammable Liquids), Class 4 (Flammable Solids), Class 5 (Oxidizers), Class 6 (Toxic), Class 7 (Radioactive), Class 8 (Corrosives), and Class 9 (Miscellaneous). Each requires specific handling, packaging, and documentation.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Is my chemical considered hazardous?</h3>
+              <p className="text-gray-600">
+                If your chemical has hazardous properties (flammable, toxic, corrosive, explosive, oxidizing, or radioactive), it's classified as a dangerous good. Contact us with your Safety Data Sheet (SDS) and we'll assess whether DG regulations apply to your shipment.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">What's the difference between IATA, IMDG, and ADR?</h3>
+              <p className="text-gray-600">
+                IATA covers air transport, IMDG covers maritime/sea transport, and ADR covers road transport. Each has different requirements for packaging, labeling, and quantity limits. We ensure compliance with the appropriate regulation for your chosen transport method.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">Can all chemicals be transported by air?</h3>
+              <p className="text-gray-600">
+                No. Some chemicals are prohibited on passenger aircraft and limited on cargo aircraft. Air transport is more restrictive than sea or road. Our team will advise on the best transport method for your specific chemical.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="font-bold text-lg mb-3">How much does DG shipping cost?</h3>
+              <p className="text-gray-600">
+                DG shipping costs depend on chemical type, quantity, destination, urgency, and transport method. We provide competitive quotes based on your specific requirements. Request a quote to get an accurate estimate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Content Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center gradient-text mb-12">
+            DG Shipping Industry Insights
+          </h2>
+          <div className="prose prose-lg max-w-none">
+            <h3>The Importance of Certified DG Handlers</h3>
+            <p>
+              Dangerous goods require specialized expertise. All personnel involved in DG transport must have proper certifications. At Airnet International, our team includes certified dangerous goods handlers, shippers, and coordinators who stay current with regulatory changes.
+            </p>
+
+            <h3>Global DG Shipping Regulations</h3>
+            <p>
+              International DG transport is governed by the UN Recommendations on the Transport of Dangerous Goods, implemented through IATA, IMDG, and ADR. These regulations are regularly updated to reflect new hazards and best practices. We track all changes to ensure your shipments remain compliant.
+            </p>
+
+            <h3>DG Packaging & Containers</h3>
+            <p>
+              UN-approved packaging is not negotiable. All containers must be tested and certified for the specific hazard class. Improper packaging is one of the leading causes of DG shipping incidents. We only use certified UN packaging from trusted manufacturers.
+            </p>
+
+            <h3>Chemical Compatibility & Segregation</h3>
+            <p>
+              Some chemicals cannot be shipped together due to dangerous reactions. Our experts ensure proper segregation and stowage to prevent accidents. This is especially critical for sea freight where chemicals are stored in close proximity.
+            </p>
+
+            <h3>Emergency Response & Safety Protocols</h3>
+            <p>
+              We maintain 24/7 emergency response capabilities for any DG-related incidents. Our personnel know proper handling of spills, leaks, and chemical reactions. We also provide Emergency Response Information in compliance with international requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-primary via-secondary to-accent text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need DG & Hazardous Cargo Shipping?</h2>
-          <p className="text-xl mb-8 leading-relaxed">
-            Get expert handling for your dangerous goods with full compliance and safety assurance
+        <div className="container mx-auto text-center max-w-3xl">
+          <h2 className="text-4xl font-bold mb-6">Ready to Ship Dangerous Goods Safely?</h2>
+          <p className="text-xl mb-8">
+            Get expert guidance and reliable transportation for your hazardous materials with 30 years of DG shipping experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.skyflyexpress.com"
+              href="https://www.skyflyexpress.com/quote"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
-              Request DG Quote
+              Get a Quote
             </a>
             <a
               href="tel:9920216805"
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition"
             >
-              Call +91 9920216805
+              Call Expert
             </a>
           </div>
         </div>
