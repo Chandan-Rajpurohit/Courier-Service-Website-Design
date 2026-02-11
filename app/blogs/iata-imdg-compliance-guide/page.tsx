@@ -144,37 +144,41 @@ export default function IataImdgComplianceGuide() {
           </ul>
 
           <h2>Comparing IATA vs. IMDG Requirements</h2>
-          <table>
-            <tr>
-              <th>Aspect</th>
-              <th>IATA</th>
-              <th>IMDG</th>
-            </tr>
-            <tr>
-              <td>Packaging</td>
-              <td>Stricter for air safety</td>
-              <td>Allows larger containers</td>
-            </tr>
-            <tr>
-              <td>Documentation</td>
-              <td>Shipper's Declaration</td>
-              <td>Manifest & Declaration</td>
-            </tr>
-            <tr>
-              <td>Segregation</td>
-              <td>Not as restrictive</td>
-              <td>Strict separation rules</td>
-            </tr>
-            <tr>
-              <td>Quantity Limits</td>
-              <td>Strict limits per package</td>
-              <td>Flexible with proper stowage</td>
-            </tr>
-            <tr>
-              <td>Updates</td>
-              <td>Annual revisions</td>
-              <td>Biennial amendments</td>
-            </tr>
+          <table className="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-primary text-white">
+                <th className="border border-gray-300 p-3 text-left">Aspect</th>
+                <th className="border border-gray-300 p-3 text-left">IATA</th>
+                <th className="border border-gray-300 p-3 text-left">IMDG</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-gray-50 hover:bg-gray-100 transition">
+                <td className="border border-gray-300 p-3 font-semibold">Packaging</td>
+                <td className="border border-gray-300 p-3">Stricter for air safety</td>
+                <td className="border border-gray-300 p-3">Allows larger containers</td>
+              </tr>
+              <tr className="hover:bg-gray-100 transition">
+                <td className="border border-gray-300 p-3 font-semibold">Documentation</td>
+                <td className="border border-gray-300 p-3">Shipper's Declaration</td>
+                <td className="border border-gray-300 p-3">Manifest & Declaration</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100 transition">
+                <td className="border border-gray-300 p-3 font-semibold">Segregation</td>
+                <td className="border border-gray-300 p-3">Not as restrictive</td>
+                <td className="border border-gray-300 p-3">Strict separation rules</td>
+              </tr>
+              <tr className="hover:bg-gray-100 transition">
+                <td className="border border-gray-300 p-3 font-semibold">Quantity Limits</td>
+                <td className="border border-gray-300 p-3">Strict limits per package</td>
+                <td className="border border-gray-300 p-3">Flexible with proper stowage</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100 transition">
+                <td className="border border-gray-300 p-3 font-semibold">Updates</td>
+                <td className="border border-gray-300 p-3">Annual revisions</td>
+                <td className="border border-gray-300 p-3">Biennial amendments</td>
+              </tr>
+            </tbody>
           </table>
 
           <h2>The 9 Hazard Classes Explained</h2>

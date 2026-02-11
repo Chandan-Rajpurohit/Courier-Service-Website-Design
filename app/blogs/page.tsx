@@ -18,7 +18,7 @@ const blogArticles = [
     category: "DG & Hazardous",
     readTime: "12 min",
     date: "Feb 10, 2025",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=300&fit=crop",
+    image: "/blog-dg-hazardous-chemical-courier.jpg",
     slug: "dg-hazardous-chemical-courier-guide",
   },
   {
@@ -29,7 +29,7 @@ const blogArticles = [
     category: "Chemical Logistics",
     readTime: "10 min",
     date: "Feb 8, 2025",
-    image: "https://images.unsplash.com/photo-1581092971360-8d5d51f05f4f?w=500&h=300&fit=crop",
+    image: "/blog-chemical-shipment-best-practices.jpg",
     slug: "chemical-shipment-best-practices",
   },
   {
@@ -40,7 +40,7 @@ const blogArticles = [
     category: "Compliance",
     readTime: "11 min",
     date: "Feb 5, 2025",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+    image: "/blog-iata-imdg-compliance.jpg",
     slug: "iata-imdg-compliance-guide",
   },
   {
@@ -51,7 +51,7 @@ const blogArticles = [
     category: "Industry Trends",
     readTime: "9 min",
     date: "Feb 1, 2025",
-    image: "https://images.unsplash.com/photo-1586528116039-c48148d2e059?w=500&h=300&fit=crop",
+    image: "/blog-ecommerce-logistics-trends.jpg",
     slug: "ecommerce-logistics-trends",
   },
   {
@@ -62,7 +62,7 @@ const blogArticles = [
     category: "Specialized Logistics",
     readTime: "10 min",
     date: "Jan 28, 2025",
-    image: "https://images.unsplash.com/photo-1631217314831-c6227db76b6e?w=500&h=300&fit=crop",
+    image: "/blog-pharmaceutical-cold-chain.jpg",
     slug: "pharmaceutical-cold-chain-logistics",
   },
   {
@@ -73,7 +73,7 @@ const blogArticles = [
     category: "Sustainability",
     readTime: "8 min",
     date: "Jan 25, 2025",
-    image: "https://images.unsplash.com/photo-1559307592-642460f76ecc?w=500&h=300&fit=crop",
+    image: "/blog-sustainable-green-logistics.jpg",
     slug: "sustainable-green-logistics",
   },
   {
@@ -84,7 +84,7 @@ const blogArticles = [
     category: "Technology",
     readTime: "11 min",
     date: "Jan 22, 2025",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    image: "/blog-digital-logistics-technology.jpg",
     slug: "digital-logistics-technology",
   },
   {
@@ -95,7 +95,7 @@ const blogArticles = [
     category: "Trade & Compliance",
     readTime: "9 min",
     date: "Jan 19, 2025",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+    image: "/blog-customs-documentation.jpg",
     slug: "customs-documentation-guide",
   },
 ]
