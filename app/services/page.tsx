@@ -8,10 +8,11 @@ import {
   Clock,
   Shield,
   FileText,
-  Warehouse,
   CheckCircle,
   FlaskConical,
+  Truck,
 } from "lucide-react"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "DG & Hazardous Courier | Chemical & Pharmaceutical Shipping | Airnet International",
@@ -85,159 +86,173 @@ export default function ServicesPage() {
             Comprehensive Shipping Solutions
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* DG & Hazardous Courier - HIGH PRIORITY */}
+            <Link href="/services/dg-hazardous" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-primary group">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                <AlertTriangle className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">DG & Hazardous Cargo</h3>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Expert handling of Dangerous Goods (DG) and hazardous cargo with full IATA, IMDG, and ADR compliance.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Chemical & Pharmaceutical specialists</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
+                  <span>UN-approved packaging & documentation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
+                  <span>All Class 1-9 dangerous goods</span>
+                </li>
+              </ul>
+              <div className="mt-4 pt-4 border-t border-primary/20 text-primary font-semibold group-hover:translate-x-1 transition">
+                Learn More →
+              </div>
+            </Link>
+
+            {/* Chemical Courier */}
+            <Link href="/services/chemical-courier" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-secondary group">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                <FlaskConical className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Chemical Courier</h3>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Specialized chemical shipment handling with hazardous and non-hazardous expertise worldwide.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Industrial & specialty chemicals</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Acids, bases, and solvents</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Temperature-controlled transport</span>
+                </li>
+              </ul>
+              <div className="mt-4 pt-4 border-t border-secondary/20 text-secondary font-semibold group-hover:translate-x-1 transition">
+                Learn More →
+              </div>
+            </Link>
+
+            {/* Commercial Courier */}
+            <Link href="/services/commercial-courier" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-accent group">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                <Package className="text-white" size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Commercial Courier</h3>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Professional business shipping for documents, parcels, and commercial goods worldwide.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>Same-day and next-day delivery</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>100+ countries coverage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>Real-time tracking & POD</span>
+                </li>
+              </ul>
+              <div className="mt-4 pt-4 border-t border-accent/20 text-accent font-semibold group-hover:translate-x-1 transition">
+                Learn More →
+              </div>
+            </Link>
+
             {/* Air Freight */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-primary">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4">
+            <Link href="/services/air-freight" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-primary group">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
                 <Plane className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-3">Air Freight Services</h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Fast, reliable air cargo solutions for time-sensitive shipments worldwide. Express and standard options
-                available.
+                Fast, reliable air cargo solutions for time-sensitive shipments. Express and standard options.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>Express air courier (24-72 hours delivery)</span>
+                  <span>24-72 hours express delivery</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>Standard air freight for bulk shipments</span>
+                  <span>Bulk shipment options available</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>Real-time tracking and updates</span>
+                  <span>Real-time tracking</span>
                 </li>
               </ul>
-            </div>
-
-            {/* Sea Freight */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-secondary">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mb-4">
-                <Ship className="text-white" size={32} />
+              <div className="mt-4 pt-4 border-t border-primary/20 text-primary font-semibold group-hover:translate-x-1 transition">
+                Learn More →
               </div>
-              <h3 className="text-2xl font-bold mb-3">Sea Freight Services</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Cost-effective ocean freight solutions for large volume shipments. Full container load (FCL) and less
-                than container load (LCL).
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>FCL and LCL shipping options</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>Port-to-port and door-to-door delivery</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>Customs clearance assistance</span>
-                </li>
-              </ul>
-            </div>
+            </Link>
 
             {/* Express Courier */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-accent">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4">
-                <Package className="text-white" size={32} />
+            <Link href="/services/express-courier" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-secondary group">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                <Clock className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-3">Express Courier</h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Rapid door-to-door delivery for documents and parcels to over 100 countries with guaranteed delivery
-                times.
+                Rapid door-to-door delivery for documents and parcels to over 100 countries.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Same-day and next-day delivery options</span>
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Same-day delivery options</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Document and parcel shipping</span>
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Signature & proof of delivery</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Signature confirmation and proof of delivery</span>
+                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
+                  <span>Global coverage with tracking</span>
                 </li>
               </ul>
-            </div>
-
-            {/* DG & Hazardous Courier */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-primary">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4">
-                <AlertTriangle className="text-white" size={32} />
+              <div className="mt-4 pt-4 border-t border-secondary/20 text-secondary font-semibold group-hover:translate-x-1 transition">
+                Learn More →
               </div>
-              <h3 className="text-2xl font-bold mb-3">DG & Hazardous Courier</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Expert handling of Dangerous Goods (DG) and hazardous cargo with full IATA and IMO compliance for secure
-                global transport.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>Chemical, Pharmaceutical & Petroleum specialists</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>Hazardous and Non-Hazardous cargo handling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-primary mt-1 flex-shrink-0" />
-                  <span>UN-approved packaging and documentation</span>
-                </li>
-              </ul>
-            </div>
+            </Link>
 
             {/* Import/Export */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-secondary">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mb-4">
+            <Link href="/services/import-export" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-accent group">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition">
                 <Globe className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-3">Import & Export Services</h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Complete import-export solutions with documentation, customs clearance, and compliance management.
+                Complete import-export solutions with documentation, customs clearance, and compliance.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>End-to-end documentation handling</span>
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>End-to-end documentation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>Customs brokerage and clearance</span>
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>Customs brokerage</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-secondary mt-1 flex-shrink-0" />
-                  <span>Compliance with international regulations</span>
+                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
+                  <span>Regulatory compliance</span>
                 </li>
               </ul>
-            </div>
-
-            {/* Warehousing */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-t-4 border-accent">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4">
-                <Warehouse className="text-white" size={32} />
+              <div className="mt-4 pt-4 border-t border-accent/20 text-accent font-semibold group-hover:translate-x-1 transition">
+                Learn More →
               </div>
-              <h3 className="text-2xl font-bold mb-3">Warehousing Solutions</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Secure storage facilities with inventory management and distribution services for your cargo.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Climate-controlled storage facilities</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Inventory management systems</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle size={16} className="text-accent mt-1 flex-shrink-0" />
-                  <span>Pick, pack, and distribution services</span>
-                </li>
-              </ul>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
