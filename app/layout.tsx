@@ -5,6 +5,7 @@ import "./globals.css"
 import AirnetHeader from "@/components/airnet-header"
 import AirnetFooter from "@/components/airnet-footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { ScrollToTop } from "@/components/scroll-to-top"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -39,6 +40,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <ScrollToTop />
           <div className="flex min-h-screen flex-col bg-white">
             <AirnetHeader />
             <div className="flex-1">{children}</div>

@@ -1,12 +1,84 @@
+# Airnet International - robots.txt
+# Comprehensive crawling directives for SEO optimization
+# Priority: DG/Hazardous Cargo, Chemical Courier, and Logistics Content
+
 User-agent: *
 Allow: /
+
+# High Priority Paths - DG & Hazardous Cargo Expertise
+# These should be crawled and indexed with high frequency
+Allow: /services/dg-hazardous
+Allow: /services/chemical-courier
+Allow: /services/commercial-courier
+Allow: /blogs/dg-hazardous-chemical-courier-guide
+Allow: /blogs/chemical-shipment-best-practices
+Allow: /blogs/iata-imdg-compliance-guide
+
+# Main Service & Blog Pages
 Allow: /services
+Allow: /services/air-freight
+Allow: /services/express-courier
+Allow: /services/import-export
 Allow: /blogs
+
+# Supporting Pages
 Allow: /about
+Allow: /contact
+Allow: /quote
+Allow: /track
 
-# Priority: DG Courier Service, Hazardous Cargo Shipping, Chemical Courier
-# Priority: Dangerous Goods Transport, Pharmaceutical Logistics, Hazardous Material Shipping
-# Priority: Chemical Export Services, DG Shipping Specialist, International Hazardous Courier
+# Disallow private/admin areas (if any)
+Disallow: /admin
+Disallow: /private
 
-# Sitemap Location
-Sitemap: https://www.airnetinternational.com/sitemap.xml
+# Crawl Delay for responsible crawling
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://airnetinternational.com/sitemap.xml
+
+# ---
+# Specific Crawler Directives
+# ---
+
+User-agent: Googlebot
+Allow: /
+Allow: /services/
+Allow: /blogs/
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Allow: /services/
+Allow: /blogs/
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# ---
+# SEO Keywords & Content Focus Areas
+# ---
+# This robots.txt prioritizes indexing and crawling of:
+# - DG (Dangerous Goods) Courier Services
+# - Chemical Courier and Hazardous Material Shipping
+# - Hazmat Logistics and Compliance Information
+# - Commercial Courier Services
+# - International Shipping and Freight Solutions
+# - Pharmaceutical and Chemical Export Services
+# - IATA, IMDG, and ADR Compliance Guidance
+# - Industry Insights and Logistics Trends
+
+# Primary Focus Keywords:
+# 1. DG courier service, dangerous goods shipping, hazardous cargo transport
+# 2. Chemical courier, chemical export, chemical shipping, industrial chemicals
+# 3. Pharmaceutical logistics, vaccine cold chain, medical shipments
+# 4. Petroleum and petrochemical transport, hazmat shipping
+# 5. International courier, express delivery, commercial shipping
+# 6. IATA hazmat, IMDG compliance, ADR transport
+# 7. Customs clearance, import/export documentation
+# 8. Commercial logistics, B2B shipping, freight forwarding
