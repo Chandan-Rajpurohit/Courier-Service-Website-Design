@@ -172,7 +172,7 @@ const seoKeywords = [
               onClick={() => setShowAllKeywords(!showAllKeywords)}
               className="flex items-center gap-2 text-xs bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition no-select font-semibold"
             >
-              {showAllKeywords ? "" : ""}
+              <span>{showAllKeywords ? "Hide" : "Show"} Keywords</span>
               <ChevronDown
                 size={14}
                 className={`transition-transform ${showAllKeywords ? "rotate-180" : ""}`}
