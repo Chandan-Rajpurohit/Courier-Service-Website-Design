@@ -1,4 +1,5 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Inter } from 'next/font/google'
 import "./globals.css"
@@ -40,7 +41,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <ScrollToTop />
+          <Suspense fallback={null}>
+            <ScrollToTop />
+          </Suspense>
           <div className="flex min-h-screen flex-col bg-white">
             <AirnetHeader />
             <div className="flex-1">{children}</div>
