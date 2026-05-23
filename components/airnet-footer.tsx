@@ -1,6 +1,6 @@
 "use client"
 
-import { Instagram, Facebook, Linkedin, Twitter, MapPin, Phone, Mail, MessageCircle, ChevronDown } from 'lucide-react'
+import { Instagram, Facebook, Linkedin, Twitter, Youtube, MapPin, Phone, Mail, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
 export default function AirnetFooter() {
@@ -151,6 +151,7 @@ const seoKeywords = [
               <a href="https://www.facebook.com/SkyFlyLogistics/" className="hover:opacity-80 transition p-2 bg-white/20 rounded-lg"><Facebook size={20} /></a>
               <a href="https://x.com/skyflylogistic" className="hover:opacity-80 transition p-2 bg-white/20 rounded-lg"><Twitter size={20} /></a>
               <a href="https://www.linkedin.com/in/sky-fly-international-00816919a/" className="hover:opacity-80 transition p-2 bg-white/20 rounded-lg"><Linkedin size={20} /></a>
+              <a href="https://www.youtube.com/@SkyFlyLogisticsPvtLtd" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition p-2 bg-white/20 rounded-lg"><Youtube size={20} /></a>
             </div>
 
             <a
@@ -172,7 +173,7 @@ const seoKeywords = [
               onClick={() => setShowAllKeywords(!showAllKeywords)}
               className="flex items-center gap-2 text-xs bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition no-select font-semibold"
             >
-              {showAllKeywords ? "" : ""}
+              <span>{showAllKeywords ? "Hide" : "Show"} Keywords</span>
               <ChevronDown
                 size={14}
                 className={`transition-transform ${showAllKeywords ? "rotate-180" : ""}`}

@@ -1,10 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 
 export function ScrollToTop() {
-  const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
