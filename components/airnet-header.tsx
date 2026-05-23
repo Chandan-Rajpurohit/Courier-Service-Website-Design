@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, Mail, Instagram, Facebook, Linkedin, Twitter, Menu, X } from "lucide-react"
+import { Phone, Mail, Instagram, Facebook, Linkedin, Twitter, Youtube, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -81,6 +81,15 @@ export default function AirnetHeader() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={16} />
+              </a>
+              <a
+                href="https://www.youtube.com/@SkyFlyLogisticsPvtLtd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition"
+                aria-label="YouTube"
+              >
+                <Youtube size={16} />
               </a>
             </div>
           </div>
